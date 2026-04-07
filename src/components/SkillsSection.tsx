@@ -1,4 +1,4 @@
-import { Code, Server, Database, GitBranch, Globe, BarChart3 } from "lucide-react";
+import { Code, Server, Database, GitBranch, Globe, BarChart3, Bot } from "lucide-react";
 
 const skillCategories = [
   {
@@ -25,6 +25,18 @@ const skillCategories = [
     skills: ["MongoDB", "MySQL", "Firebase / Firestore"],
   },
   {
+    title: "AI Tools & Platforms",
+    icon: Bot,
+    skills: [
+      "AI Models – ChatGPT, Gemini, Claude",
+      "Automation – Zapier, Make, n8n",
+      "RAG Systems & Prompt Engineering",
+      "AI Media – Midjourney, RunwayML, HeyGen, Gamma",
+      "AI Dev Tools – Cursor, Windsurf",
+      "AI Builders – Firebase Studio, Lovable",
+    ],
+  },
+  {
     title: "Version Control & Tools",
     icon: GitBranch,
     skills: [
@@ -43,7 +55,7 @@ const skillCategories = [
     ],
   },
   {
-    title: "Automation & Data Visualization",
+    title: "Python & Data Visualization",
     icon: BarChart3,
     skills: ["Python", "Openpyxl", "MS Excel", "Power BI"],
   },
