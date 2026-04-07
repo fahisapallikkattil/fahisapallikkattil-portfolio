@@ -11,13 +11,7 @@ const AboutSection = () => {
 
           <div className="space-y-5 text-muted-foreground leading-relaxed text-base md:text-lg">
             <p>
-              I'm a passionate and detail-oriented Web Developer who loves turning ideas into clean, responsive, and user-friendly digital experiences. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I focus on building fast, scalable, and visually engaging websites and web applications.
-            </p>
-            <p>
-              I enjoy solving real-world problems through code and continuously learning new technologies to stay ahead in the ever-evolving tech landscape. From designing intuitive user interfaces to developing functional backend systems, I aim to create seamless experiences that deliver real value.
-            </p>
-            <p>
-              I believe great web development is not just about writing code — it's about understanding users, crafting smart solutions, and building products that make an impact.
+              I am an AI-powered Frontend Developer specializing in React.js, intelligent web applications, and workflow automation. With expertise in AI chatbots, RAG systems, and full-stack development, I build scalable and user-focused digital solutions while combining technology with creativity.
             </p>
             <p className="text-primary font-semibold text-xl pt-2">
               Let's build something amazing together.
