@@ -1,13 +1,10 @@
 import { ArrowDown, Download } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import resumePdf from "@/assets/Fahisa_Pallikkattil_AI_Engineer.pdf";
 
 const HeroSection = () => {
   const handleResumeDownload = () => {
-    // Create a link to download the resume
-    const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "Fahisa_Pallikkattil_Resume.pdf";
-    link.click();
+    window.open(resumePdf, "_blank");
   };
 
   return (
