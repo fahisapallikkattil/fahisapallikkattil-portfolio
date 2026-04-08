@@ -1,4 +1,4 @@
-import { Code, Server, Database, GitBranch, Globe, BarChart3, Bot } from "lucide-react";
+import { Code, Server, Link, Database, Bot, Palette, Brain, Rocket } from "lucide-react";
 
 const skillCategories = [
   {
@@ -11,13 +11,17 @@ const skillCategories = [
     ],
   },
   {
-    title: "Backend & APIs",
+    title: "Backend Development",
     icon: Server,
     skills: [
-      "Node.js & Express.js",
-      "REST API Integration, JSON, Fetch",
+      "Node.js, Express.js",
       "CRUD Operations, Database Connectivity",
     ],
+  },
+  {
+    title: "APIs & Data Handling",
+    icon: Link,
+    skills: ["REST API Integration, JSON, Fetch"],
   },
   {
     title: "Databases",
@@ -25,39 +29,46 @@ const skillCategories = [
     skills: ["MongoDB", "MySQL", "Firebase / Firestore"],
   },
   {
-    title: "AI Tools & Platforms",
+    title: "AI & Automation",
     icon: Bot,
     skills: [
       "AI Models – ChatGPT, Gemini, Claude",
       "Automation – Zapier, Make, n8n",
-      "RAG Systems & Prompt Engineering",
-      "AI Media – Midjourney, RunwayML, HeyGen, Gamma",
-      "AI Dev Tools – Cursor, Windsurf",
-      "AI Builders – Firebase Studio, Lovable",
+      "Retrieval-Augmented Generation (RAG) Systems",
+      "Prompt Engineering & LLM Optimization",
     ],
   },
   {
-    title: "Version Control & Tools",
-    icon: GitBranch,
+    title: "AI Media & Creative Tools",
+    icon: Palette,
     skills: [
+      "Midjourney, Runway ML, HeyGen, Gamma",
+      "Canva, CapCut, Adobe Express",
+    ],
+  },
+  {
+    title: "AI Development, Version Control & Tools",
+    icon: Brain,
+    skills: [
+      "Cursor, Windsurf",
+      "Firebase Studio, Lovable",
       "Git, GitHub, GitHub Actions (CI/CD basics)",
       "VS Code",
       "NPM Package Management",
-      "Vite (Frontend Bundler / Build Tool)",
+      "Vite (Frontend Build Tool)",
     ],
   },
   {
-    title: "Deployment & Hosting",
-    icon: Globe,
+    title: "Deployment, Hosting & Data Visualization",
+    icon: Rocket,
     skills: [
       "GitHub Pages",
       "Continuous Integration / Deployment (CI/CD basics)",
+      "Python",
+      "Openpyxl",
+      "MS Excel",
+      "Power BI",
     ],
-  },
-  {
-    title: "Python & Data Visualization",
-    icon: BarChart3,
-    skills: ["Python", "Openpyxl", "MS Excel", "Power BI"],
   },
 ];
 
