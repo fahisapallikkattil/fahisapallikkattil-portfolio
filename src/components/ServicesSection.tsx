@@ -1,34 +1,40 @@
-import { Globe, Bot, Settings, Brain, Palette } from "lucide-react";
+import { Globe, Bot, Brain, Settings, Search, Palette } from "lucide-react";
 
 const services = [
   {
     title: "Web Development",
     description:
-      "I build modern, responsive, and high-performance web applications using React.js and the latest frontend technologies. From landing pages to full-stack solutions, I create user-friendly interfaces with seamless functionality and optimized performance.",
+      "I build modern, responsive web applications with clean UI, smooth performance, and scalable architecture using the latest technologies.",
     icon: Globe,
   },
   {
-    title: "AI Chatbots",
+    title: "AI Chatbot Development",
     description:
-      "I develop intelligent AI chatbots that automate customer interactions, handle queries, and improve user engagement. From simple assistants to advanced RAG-based chatbots, my solutions deliver accurate and context-aware responses.",
+      "I create intelligent chatbots that automate conversations, handle user queries, and deliver accurate, context-aware responses.",
     icon: Bot,
-  },
-  {
-    title: "Workflow Automation",
-    description:
-      "I design and implement automation systems that streamline business processes and reduce manual work. Using tools like Zapier, Make, and n8n, I create efficient workflows for lead management, data handling, and task automation.",
-    icon: Settings,
   },
   {
     title: "AI Applications",
     description:
-      "I build AI-powered applications that integrate intelligent features into real-world solutions. This includes AI agents, smart data processing systems, and custom AI integrations that enhance efficiency and user experience.",
+      "I develop AI-powered applications including AI agents and smart systems that enhance functionality and solve real-world problems.",
     icon: Brain,
+  },
+  {
+    title: "Workflow Automation",
+    description:
+      "I design automation workflows to streamline tasks, reduce manual work, and improve efficiency using tools like Zapier, Make, and n8n.",
+    icon: Settings,
+  },
+  {
+    title: "AI Search & RAG Systems",
+    description:
+      "I build advanced AI systems using vector search and RAG to deliver intelligent, data-driven, and context-aware information retrieval.",
+    icon: Search,
   },
   {
     title: "AI Content Creation",
     description:
-      "I create high-quality AI-generated visuals, videos, and digital content for modern brands. Using advanced AI tools, I design engaging media that enhances branding, marketing, and social media presence.",
+      "I create high-quality AI-generated visuals, videos, and digital content to elevate branding and enhance online presence.",
     icon: Palette,
   },
 ];
