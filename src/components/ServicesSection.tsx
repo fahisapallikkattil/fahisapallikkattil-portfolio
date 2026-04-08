@@ -1,35 +1,35 @@
-import { Layout, Server, Smartphone, Search, Rocket, Wrench } from "lucide-react";
+import { Globe, Bot, Settings, Brain, Palette } from "lucide-react";
 
 const services = [
   {
-    title: "Frontend Development",
-    description: "Building responsive, interactive UIs with React, Tailwind CSS, and modern JavaScript frameworks.",
-    icon: Layout,
+    title: "Web Development",
+    description:
+      "I build modern, responsive, and high-performance web applications using React.js and the latest frontend technologies. From landing pages to full-stack solutions, I create user-friendly interfaces with seamless functionality and optimized performance.",
+    icon: Globe,
   },
   {
-    title: "Backend Development",
-    description: "Creating robust server-side applications with Node.js, Express, and database integration.",
-    icon: Server,
+    title: "AI Chatbots",
+    description:
+      "I develop intelligent AI chatbots that automate customer interactions, handle queries, and improve user engagement. From simple assistants to advanced RAG-based chatbots, my solutions deliver accurate and context-aware responses.",
+    icon: Bot,
   },
   {
-    title: "Responsive Design",
-    description: "Ensuring websites look and work perfectly across all devices and screen sizes.",
-    icon: Smartphone,
+    title: "Workflow Automation",
+    description:
+      "I design and implement automation systems that streamline business processes and reduce manual work. Using tools like Zapier, Make, and n8n, I create efficient workflows for lead management, data handling, and task automation.",
+    icon: Settings,
   },
   {
-    title: "SEO Optimization",
-    description: "Implementing best practices to improve search engine rankings and visibility.",
-    icon: Search,
+    title: "AI Applications",
+    description:
+      "I build AI-powered applications that integrate intelligent features into real-world solutions. This includes AI agents, smart data processing systems, and custom AI integrations that enhance efficiency and user experience.",
+    icon: Brain,
   },
   {
-    title: "Performance Optimization",
-    description: "Enhancing website speed and efficiency for the best user experience.",
-    icon: Rocket,
-  },
-  {
-    title: "Maintenance & Support",
-    description: "Ongoing website maintenance, updates, bug fixes, and technical support.",
-    icon: Wrench,
+    title: "AI Content Creation",
+    description:
+      "I create high-quality AI-generated visuals, videos, and digital content for modern brands. Using advanced AI tools, I design engaging media that enhances branding, marketing, and social media presence.",
+    icon: Palette,
   },
 ];
 
