@@ -6,7 +6,7 @@ const ContactSection = () => {
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
@@ -14,16 +14,25 @@ const ContactSection = () => {
       return;
     }
 
-    const mailtoLink = `mailto:getfahisa@gmail.com?subject=${encodeURIComponent(
-      form.subject || `Portfolio Contact from ${form.name}`
-    )}&body=${encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
-    )}`;
+    try {
+      await fetch("https://fahisap.app.n8n.cloud/webhook-test/a2c2e540-79b9-4e24-8508-23c16323ff40", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        }),
+      });
 
-    window.open(mailtoLink, "_blank");
-
-    toast({ title: "Opening your email client..." });
-    setForm({ name: "", email: "", subject: "", message: "" });
+      toast({ title: "Message sent successfully! I'll get back to you soon." });
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      toast({ title: "Something went wrong. Please try again.", variant: "destructive" });
+    }
   };
 
   return (
