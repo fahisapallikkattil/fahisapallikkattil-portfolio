@@ -15,7 +15,7 @@ const ContactSection = () => {
     }
 
     try {
-      await fetch("https://fahisap.app.n8n.cloud/webhook/a2c2e540-79b9-4e24-8508-23c16323ff40", {
+      await fetch("https://fahisap.app.n8n.cloud/webhook-test/a2c2e540-79b9-4e24-8508-23c16323ff40", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
