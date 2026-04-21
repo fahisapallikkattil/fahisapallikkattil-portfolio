@@ -40,7 +40,7 @@ const HeroSection = () => {
             <ArrowDown size={18} />
           </a>
           <a
-            href="https://drive.google.com/file/d/16VfRKmrEPSREOXlq_SmwMhEfVHvocTOk/view?usp=sharing"
+            href={resumePdf}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-primary text-primary font-semibold hover:bg-primary/10 transition-colors"
