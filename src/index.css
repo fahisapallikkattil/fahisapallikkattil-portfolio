@@ -101,14 +101,38 @@
   }
 }
 
+/* Botpress widget: pin FAB and chat panel to bottom-left on all screens */
 .bpFabWrapper {
-  left: 20px !important;
-  right: auto !important;
-}
-
-.bpWebchat {
-  bottom: 80px !important;
+  position: fixed !important;
+  bottom: 20px !important;
   left: 20px !important;
   right: auto !important;
   top: auto !important;
+  z-index: 9999 !important;
+}
+
+.bpWebchat {
+  position: fixed !important;
+  bottom: 90px !important;
+  left: 20px !important;
+  right: auto !important;
+  top: auto !important;
+  z-index: 9999 !important;
+}
+
+/* Mobile: keep widget anchored bottom-left without overflowing the viewport */
+@media (max-width: 640px) {
+  .bpFabWrapper {
+    bottom: 16px !important;
+    left: 16px !important;
+  }
+
+  .bpWebchat {
+    bottom: 80px !important;
+    left: 16px !important;
+    right: 16px !important;
+    width: auto !important;
+    max-width: calc(100vw - 32px) !important;
+    max-height: calc(100vh - 100px) !important;
+  }
 }
