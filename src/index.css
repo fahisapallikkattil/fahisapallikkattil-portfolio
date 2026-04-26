@@ -101,9 +101,14 @@
   }
 }
 
+.bpFabWrapper {
+  left: 20px !important;
+  right: auto !important;
+}
+
 .bpWebchat {
   bottom: 80px !important;
-  right: 20px !important;
+  left: 20px !important;
+  right: auto !important;
   top: auto !important;
-  left: auto !important;
 }
